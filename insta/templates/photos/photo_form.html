@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  My lovely form
+
+  <form method="post" action="">
+    {% if form.errors %}
+      {{ form.errors }}
+    {% endif %}
+
+    {{ form }}
+
+    <button type="submit">Submit</button>
+  </form>
+  </body>
+  </html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <h1>TESST</h1>
+  {% for photo in photo_list %}
+    {{ photo.title }}
+    {{ photo.published_date }}
+    <img src="{{ photo.photo_image.url }}" alt="">
+    {{ photo.user }}
+  {% endfor %}
+</body>
+</html>
