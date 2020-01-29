@@ -22,6 +22,7 @@ from photos import views as photos_views
 
 urlpatterns = [
     path("photos/add", photos_views.PhotoCreateView.as_view(), name="photo_create"),
-    path("photos/", photos_views.photo_index),
+    path('photos/<photo_id>/', photos_views.detail, name='photo_detail'),
+    path("photos/", photos_views.photo_index, name="index"),
     path("admin/", admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

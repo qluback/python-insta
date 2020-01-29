@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <a href="{% url 'index' %}">Retour</a>
+  <h1>Details</h1>
+    <p>{{ photo_detail.id }}</p>
+    <p>{{ photo_detail.title }}</p>
+    <p>{{ photo_detail.published_date }}</p>
+    <img src="{{ photo_detail.photo_image.url }}" alt="">
+    <p>{{ photo_detail.description }}</p>
+    <p>{{ photo_detail.user }}</p>
+</body>
+</html>
